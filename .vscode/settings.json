@@ -1,0 +1,6 @@
+{
+    "fortran.fortls.path": "/home/nunzio/.local/bin/fortls",
+    "fortran.linter.compiler": "gfortran",  // or your preferred compiler
+    "fortran.fortls.arguments": ["--hover_signature", "--enable_code_actions"]
+  }
+  

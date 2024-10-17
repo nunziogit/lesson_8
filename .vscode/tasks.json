@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Fortran Project",
+            "type": "shell",
+            "command": "gfortran",
+            "args": [
+                "-g",                              // Enables debugging information
+                "*.f90",                           // Compile all .f90 files in the workspace
+                "-o", "project.exe"                // Output executable named project.exe
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Task for building a Fortran project with multiple files"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch Fortran",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/project.exe",   // Use the name of the output executable
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",   // Ensure this path is correct
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build Fortran Project",   // Matches the task label from tasks.json
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
